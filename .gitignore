@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+
+# Archivos de datos grandes (Excel/CSV)
+*.xlsx
+*.xls
+*.csv
+Excel files/
+
+# Archivos procesados
+*.pkl
+*.pickle
+processed_data.*
+
+# Archivos HTML interactivos grandes
+*.html
+
+# Archivos temporales
+~$*
+.*~
+*.tmp
+borrer.txt
+
+# PDFs generados
+*.pdf
+
+# Imágenes (si son muy pesadas, descomenta la línea de abajo)
+# *.png
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos temporales de Office
+~$*
+
+# Carpetas temporales
+.849*/
