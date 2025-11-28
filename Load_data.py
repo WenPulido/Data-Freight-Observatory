@@ -89,7 +89,7 @@ def load_and_prepare_international_data(file_path: str = None) -> pd.DataFrame:
 
 def initialize_trade_data():
     if "df_domestic" not in st.session_state:
-        st.session_state.df_domestic = load_and_prepare_data("U.S Domestics Trade - Imports and Exports.csv")
+        st.session_state.df_domestic = load_and_prepare_data("https://sistemaupr-my.sharepoint.com/:x:/g/personal/wendy_pulido_upr_edu/IQC1hEC6Ot_vRKz2nxpxZCusAcQrOZkmg3ZU9s_Jv-oqjbg?e=BQ0OQ6
 
 def initialize_international_data():
     if "df_international" not in st.session_state:
