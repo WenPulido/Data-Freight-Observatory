@@ -93,4 +93,4 @@ def initialize_trade_data():
 
 def initialize_international_data():
     if "df_international" not in st.session_state:
-        st.session_state.df_international = load_and_prepare_international_data("U.S International Trade - Imports and Exports.xlsx")
+        st.session_state.df_international = load_and_prepare_international_data("https://sistemaupr-my.sharepoint.com/:x:/g/personal/wendy_pulido_upr_edu/IQATvfbw0026TpZrtawDobcJAZ9Ya9dqcOiUPn-yZ61o7QM?e=19HWBr")
