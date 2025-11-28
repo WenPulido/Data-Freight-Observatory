@@ -36,7 +36,7 @@ st.markdown(f"""
             International Trade with Puerto Rico 
             <span style='color:#c8c9d0; font-weight:normal;'> <h1> Air cargo </h1></span> </h1> """, unsafe_allow_html=True)
 
-international_trade ="U.S International Trade - Imports and Exports.xlsx" #File Path
+international_trade ="https://docs.google.com/spreadsheets/d/1j5hoixO2ptOu5FT3E39eXDeogvS29y8O/export?format=xlsx" #File Path
 # [Load and prepare database]
 @st.cache_data(show_spinner="Loading data...")
 def load_and_prepare_data(file_path: str) -> pd.DataFrame:
