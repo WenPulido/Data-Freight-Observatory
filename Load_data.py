@@ -70,7 +70,7 @@ def load_and_prepare_international_data(file_url: str) -> pd.DataFrame:
 def initialize_trade_data():
     if "df_domestic" not in st.session_state:
         st.session_state.df_domestic = load_and_prepare_data(
-            "https://sistemaupr-my.sharepoint.com/:x:/r/personal/wendy_pulido_upr_edu/Documents/Freight%20Data%20Observatory/U.S%20Domestics%20Trade%20-%20Imports%20and%20Exports.csv?download=1"
+            "https://drive.google.com/file/d/1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3/view?usp=sharing"
         )
 
 def initialize_international_data():
