@@ -87,12 +87,10 @@ def load_and_prepare_international_data(file_path: str = None) -> pd.DataFrame:
     
     return df_international
 
-
 def initialize_trade_data():
     if "df_domestic" not in st.session_state:
-        st.session_state.df_domestic = load_and_prepare_data()  # Sin parámetro, usa SharePoint
-
+        st.session_state.df_domestic = load_and_prepare_data("U.S Domestics Trade - Imports and Exports.csv")
 
 def initialize_international_data():
     if "df_international" not in st.session_state:
-        st.session_state.df_international = load_and_prepare_international_data()  # Sin parámetro, usa SharePoint
+        st.session_state.df_international = load_and_prepare_international_data("U.S International Trade - Imports and Exports.xlsx")
