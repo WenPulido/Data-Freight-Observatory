@@ -70,7 +70,7 @@ def load_and_prepare_international_data(file_url: str) -> pd.DataFrame:
 def initialize_trade_data():
     if "df_domestic" not in st.session_state:
         st.session_state.df_domestic = load_and_prepare_data(
-            ""https://drive.google.com/uc?id=1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3""
+            "https://drive.google.com/uc?id=1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3"
         )
 
 def initialize_international_data():
