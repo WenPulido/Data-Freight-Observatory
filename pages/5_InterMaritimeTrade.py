@@ -794,7 +794,7 @@ def init_dashboard(file_path: str):
     df_base = load_and_prepare_data(file_path)
     return filter_sidebar(df_base)   
 
-dfi, df_filtered, sidebar_filters = init_dashboard("U.S International Trade - Imports and Exports.xlsx")
+dfi, df_filtered, sidebar_filters = init_dashboard("https://docs.google.com/spreadsheets/d/1j5hoixO2ptOu5FT3E39eXDeogvS29y8O/export?format=xlsx")
 flow_type = sidebar_filters["Flow Type"]
 year = sidebar_filters["Year"]
 port = sidebar_filters["Port"]
