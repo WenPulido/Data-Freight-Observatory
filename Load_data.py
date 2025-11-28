@@ -76,5 +76,5 @@ def initialize_trade_data():
 def initialize_international_data():
     if "df_international" not in st.session_state:
         st.session_state.df_international = load_and_prepare_international_data(
-            "https://sistemaupr-my.sharepoint.com/:x:/g/personal/wendy_pulido_upr_edu/IQATvfbw0026TpZrtawDobcJAZ9Ya9dqcOiUPn-yZ61o7QM?download=1"
+            "https://docs.google.com/spreadsheets/d/1j5hoixO2ptOu5FT3E39eXDeogvS29y8O/edit?usp=sharing&ouid=101061615905482534060&rtpof=true&sd=true"
         )
