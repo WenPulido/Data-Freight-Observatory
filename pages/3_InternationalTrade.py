@@ -276,7 +276,7 @@ def metrics_international_trade(df_filtered, dfi, flow_type, year, port):
         df_imports_prev = pd.DataFrame()
 
     import_tons = df_imports['Air Total Weight (Tons)'].sum()
-    import_value = df_imports['Air Total Value ($US)'].sum()
+    import_value = df_imports['Air Total  Value ($US)'].sum()
 
     if not df_imports_prev.empty:
         import_tons_prev = df_imports_prev['Air Total Weight (Tons)'].sum()
@@ -312,7 +312,7 @@ def metrics_international_trade(df_filtered, dfi, flow_type, year, port):
         df_exports_prev = pd.DataFrame()
 
     export_tons = df_exports['Air Total Weight (Tons)'].sum()
-    export_value = df_exports['Air Total Value ($US)'].sum()
+    export_value = df_exports['Air Total  Value ($US)'].sum()
 
     if not df_exports_prev.empty:
         export_tons_prev = df_exports_prev['Air Total Weight (Tons)'].sum()
@@ -441,7 +441,7 @@ def enhanced_kpi_cards(df_filtered, year):
     # Calcular métricas
     total_countries = df_filtered['Country'].nunique()
     total_commodities = df_filtered['Commodity'].nunique()
-    avg_shipment_value = df_filtered['Air Total Value ($US)'].mean()
+    avg_shipment_value = df_filtered['Air Total  Value ($US)'].mean()
     total_trade_volume = df_filtered['Air Total Weight (Tons)'].sum()
     
     # CSS para las tarjetas
@@ -553,7 +553,7 @@ def generate_international_trade_map(filtered_data):
         as_index=False
     ).agg({
         'Air Total Weight (Tons)': 'sum',
-        'Air Total Value ($US)': 'sum'
+        'Air Total  Value ($US)': 'sum'
     })
 
     for _, row in flows.iterrows():
@@ -562,7 +562,7 @@ def generate_international_trade_map(filtered_data):
         lon = row['Longitude_country']
         indicator = row['Indicator']
         tons = row['Air Total Weight (Tons)']
-        value = row['Air Total Value ($US)']
+        value = row['Air Total  Value ($US)']
 
         if tons == 0 or pd.isna(tons):
             continue
