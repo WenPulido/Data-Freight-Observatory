@@ -9,9 +9,9 @@ env/
 # Datos - NO subir a GitHub
 Data/
 Excel files/
-*.xlsx
-*.xls
-*.csv
+#*.xlsx
+#*.xls
+#*.csv
 *.pkl
 processed_data.*
 
