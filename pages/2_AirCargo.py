@@ -40,7 +40,7 @@ st.markdown("""
 access_token = 'sgKt0HmG4TTVt9lXUCAjaLsSPLMoVN7CnA8LegyngahiKtMimaUg83TvgfROeUCe' #Access token jawg.io (MAP)
 
 # File path
-Domestic_Trade = "U.S Domestics Trade - Imports and Exports.csv"
+Domestic_Trade = "https://drive.google.com/uc?id=1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3&export=download"
 
 #_______________________________________________________________________________________________FOLIUM MAP VISUALIZATION
 Folium_map = "Folium_trade_map.html"
