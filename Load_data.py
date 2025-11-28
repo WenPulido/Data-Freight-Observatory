@@ -8,9 +8,8 @@ from io import BytesIO
 @st.cache_data
 def load_and_prepare_data(file_url: str) -> pd.DataFrame:
     try:
-        response = requests.get(file_url)
-        response.raise_for_status()
-        df_trade = pd.read_csv(BytesIO(response.content))
+        # Para Google Drive CSV: usar el enlace con &export=download
+        df_trade = pd.read_csv(file_url)
     except Exception as e:
         st.error(f"Error al cargar el archivo CSV desde la nube: {e}")
         st.stop()
@@ -35,6 +34,7 @@ def load_and_prepare_data(file_url: str) -> pd.DataFrame:
 @st.cache_data
 def load_and_prepare_international_data(file_url: str) -> pd.DataFrame:
     try:
+        # Para Google Sheets: exportar como Excel
         response = requests.get(file_url)
         response.raise_for_status()
         df_international = pd.read_excel(BytesIO(response.content))
@@ -70,7 +70,7 @@ def load_and_prepare_international_data(file_url: str) -> pd.DataFrame:
 def initialize_trade_data():
     if "df_domestic" not in st.session_state:
         st.session_state.df_domestic = load_and_prepare_data(
-            "https://drive.google.com/uc?id=1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3"
+            "https://drive.google.com/uc?id=1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3&export=download"
         )
 
 def initialize_international_data():
