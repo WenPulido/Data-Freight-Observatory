@@ -441,7 +441,7 @@ def enhanced_kpi_cards(df_filtered, year):
     # Calcular métricas
     total_countries = df_filtered['Country'].nunique()
     total_commodities = df_filtered['Commodity'].nunique()
-    avg_shipment_value = df_filtered['Air Total  Value ($US)'].mean()
+    avg_shipment_value = df_filtered['Air Total Value ($US)'].mean()
     total_trade_volume = df_filtered['Air Total Weight (Tons)'].sum()
     
     # CSS para las tarjetas
