@@ -70,11 +70,11 @@ def load_and_prepare_international_data(file_url: str) -> pd.DataFrame:
 def initialize_trade_data():
     if "df_domestic" not in st.session_state:
         st.session_state.df_domestic = load_and_prepare_data(
-            "https://drive.google.com/file/d/1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3/view?usp=sharing"
+            ""https://drive.google.com/uc?id=1IR94sMD0qB4fVJRWfFY8GmY6NMkYOBK3""
         )
 
 def initialize_international_data():
     if "df_international" not in st.session_state:
         st.session_state.df_international = load_and_prepare_international_data(
-            "https://docs.google.com/spreadsheets/d/1j5hoixO2ptOu5FT3E39eXDeogvS29y8O/edit?usp=sharing&ouid=101061615905482534060&rtpof=true&sd=true"
+            "https://docs.google.com/spreadsheets/d/1j5hoixO2ptOu5FT3E39eXDeogvS29y8O/export?format=xlsx"
         )
