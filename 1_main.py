@@ -17,7 +17,10 @@ def get_base64_image(image_file):
     return base64.b64encode(data).decode()
 
 # --- USERS ---
-users = {"Admin": "cetl4321"}
+users = {
+    "Admin":st.secrets["passwords"]["admin"],
+    "CETL.user" : st.secrets["passwords"]["User1"]
+}
 
 bg_img = get_base64_image("assets/Images/Background/Background2.png")
 
