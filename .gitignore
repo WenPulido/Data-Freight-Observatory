@@ -6,7 +6,6 @@ venv/
 env/
 *.egg-info/
 
-# Datos - NO subir a GitHub
 Data/
 Excel files/
 #*.xlsx
@@ -33,3 +32,6 @@ borrer.txt
 # Sistema
 .DS_Store
 Thumbs.db
+
+#Secrets
+.streamlit/secrets.toml
