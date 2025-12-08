@@ -14,10 +14,9 @@ Excel files/
 *.pkl
 processed_data.*
 
-# PDFs e imágenes grandes (opcional)
+# PDFs
 *.pdf
-AADT*.png
-Flow*.png
+
 
 # Temporales
 ~$*
